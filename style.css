@@ -395,6 +395,78 @@ section h2{
 .contact-links img:hover{
     transform:scale(1.2);
 }
+/* =========================
+   MOBILE IMPROVEMENTS
+   ========================= */
+
+/* NAVBAR FIX */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    #themeBtn {
+        align-self: flex-end;
+    }
+}
+
+/* HERO MOBILE FIX */
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 5%;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-image img {
+        width: 220px;
+    }
+}
+
+/* PRODUCT GRID -> SINGLE COLUMN ON PHONE */
+@media (max-width: 600px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phone-card {
+        width: 95%;
+    }
+
+    .phone-image {
+        width: 180px;
+    }
+}
+
+/* SEARCH BAR SPACING */
+@media (max-width: 600px) {
+    #searchInput {
+        width: 90%;
+    }
+}
+
+/* CONTACT ICONS SMALLER */
+@media (max-width: 600px) {
+    .contact-links img {
+        width: 45px;
+    }
+}
 
 /* FOOTER */
 footer{
